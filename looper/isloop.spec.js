@@ -24,8 +24,10 @@ const test3 = new LinkedList();
 test3.addToHead('📺');
 emojis.forEach(el => test3.addToTail(el))
 
+const test4 = new LinkedList();
+
 describe('isLoop function', () => {
-	
+
 	// Feel free to write a few tests of your own! :)
 	it('returns true if linked list contains a loop', () =>{
 		expect(isLoop(test1)).to.equal(true);
@@ -33,6 +35,7 @@ describe('isLoop function', () => {
 	});
 
 	it('returns false if linked list contains no loop', () =>{
-		expect(isLoop(test3)).to.equal(false);
+		//expect(isLoop(test4)).to.equal(false);
+	 	expect(isLoop(test3)).to.equal(false);
 	});
 });
